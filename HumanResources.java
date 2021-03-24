@@ -2,6 +2,7 @@ package lab;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 public class HumanResources {
 
@@ -22,10 +23,11 @@ public class HumanResources {
         System.out.print("\n");
     }
 
-    /*public static void sortPeopleByIncome(ArrayList<IPayable> payable){
-        Collections.sort(payable.get().calculatePay(), Collections.reverseOrder());
+    public static void sortPeopleByIncome(ArrayList<IPayable> payable){
+        payable.sort(Comparator.comparing(IPayable::calculatePay));
         for(IPayable p : payable){
             System.out.println("Pay for " + p.getClass().getSimpleName() + ": " + p.calculatePay());
         }
-    }*/
+        System.out.print("\n");
+    }
 }

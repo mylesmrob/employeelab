@@ -35,15 +35,15 @@ public class CheckCashingPlace {
         HumanResources.printPaymentInfo(bob); //Instance of HumanResources (printPaymentInfo)
         HumanResources.issueBadge(employees); //Call issueBadge
 
-        //System.out.println("Prior to sorting by pay..."); //Before sort
+        System.out.println("Prior to sorting by pay..."); //Before sort
         HumanResources.payPerson(payable); //Call PayPerson
 
-        /*ArrayList<IPayable> unSortedPeople = new ArrayList<>(); //Unsorted ArrayList
+        ArrayList<IPayable> unSortedPeople = new ArrayList<>(); //Unsorted ArrayList
         unSortedPeople.add(max);
         unSortedPeople.add(bob);
         unSortedPeople.add(alex);
 
         System.out.println("After sorting by pay..."); //After sort
-        HumanResources.sortPeopleByIncome(unSortedPeople);*/
+        HumanResources.sortPeopleByIncome(unSortedPeople);
     }
 }
